@@ -11,6 +11,7 @@ export function Home() {
       mainIcon: "📝",
       version: "v1.0",
       avatarLetter: "T",
+      path: "/todo",
     },
     {
       title: "Contador",
