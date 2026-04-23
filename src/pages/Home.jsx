@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Card } from "../components/Card";
 
 export function Home() {
@@ -50,6 +51,32 @@ export function Home() {
   ];
 
   const tagsData = ["Todos", "Utilitários", "Games", "APIs", "Produtividade"];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+      },
+    },
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 p-10 flex flex-col items-center justify-center font-body">
@@ -118,11 +145,23 @@ export function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {cardsData.map((card, index) => (
-            <Card key={index} {...card} />
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          {cardsData.map((card) => (
+            <motion.div
+              key={card.id}
+              variants={cardVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Card {...card} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         <footer className="flex justify-between items-center text-[11px] font-bold uppercase tracking-widest text-gray-500 mt-10">
           <div className="flex gap-4 items-center">
