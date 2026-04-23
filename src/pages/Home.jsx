@@ -4,6 +4,7 @@ import { Card } from "../components/Card";
 export function Home() {
   const cardsData = [
     {
+      id: 1,
       title: "To-Do List",
       description:
         "Organize suas tarefas diárias com prioridades e categorias. Simples e direto.",
@@ -14,6 +15,7 @@ export function Home() {
       path: "/todo",
     },
     {
+      id: 2,
       title: "Contador",
       description:
         "Um utilitário para monitorar cliques ou eventos em tempo real com persistência local.",
@@ -24,6 +26,7 @@ export function Home() {
       path: "/contador",
     },
     {
+      id: 3,
       title: "Jogo da Velha",
       description:
         "O clássico desafio de lógica para dois jogadores, agora com interface modernizada.",
@@ -34,6 +37,7 @@ export function Home() {
       path: "/jogo-da-velha",
     },
     {
+      id: 4,
       title: "Calculadora",
       description:
         "Execução de operações matemáticas complexas com histórico de resultados.",
@@ -44,6 +48,7 @@ export function Home() {
       path: "/calculadora",
     },
     {
+      id: 5,
       title: "Buscador de CEP",
       description:
         "Integração via API para localização instantânea de endereços em todo o Brasil.",
@@ -51,6 +56,7 @@ export function Home() {
       mainIcon: "📍",
       version: "v2.1",
       avatarLetter: "L",
+      path: "/buscacep",
     },
   ];
 
