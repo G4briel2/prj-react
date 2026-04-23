@@ -66,8 +66,8 @@ export default function TicTacToe() {
           ← Sair do Jogo
         </button>
 
-        <h2 className="font-display text-3xl font-black text-gray-800 mb-2 uppercase tracking-tighter text-center">
-          Tic-Tac-Toe
+        <h2 className="font-display text-3xl font-black text-gray-800 mb-2 tracking-tighter text-center">
+          Jogo da velha
         </h2>
 
         <div
