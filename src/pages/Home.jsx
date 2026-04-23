@@ -21,6 +21,7 @@ export function Home() {
       mainIcon: "🔢",
       version: "v1.2",
       avatarLetter: "C",
+      path: "/contador",
     },
     {
       title: "Jogo da Velha",

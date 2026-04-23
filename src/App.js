@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import TodoList from "./components/features/todo/TodoList";
+import ClickCounter from "./components/features/counter/ClickCounter";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/todo" element={<TodoList />} />
+        <Route path="/contador" element={<ClickCounter />} />
       </Routes>
     </BrowserRouter>
   );
