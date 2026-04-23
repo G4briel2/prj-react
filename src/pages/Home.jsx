@@ -31,6 +31,7 @@ export function Home() {
       mainIcon: "🎮",
       version: "v2.0",
       avatarLetter: "V",
+      path: "/jogo-da-velha",
     },
     {
       title: "Calculadora",
