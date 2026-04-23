@@ -41,6 +41,7 @@ export function Home() {
       mainIcon: "🧮",
       version: "v1.5",
       avatarLetter: "C",
+      path: "/calculadora",
     },
     {
       title: "Buscador de CEP",
